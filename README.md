@@ -4,16 +4,6 @@
 
 Simple wrapper for standard TextView with optional additional field below main text.
 ## Using
-Add repository to your project ```build.gradle```:
-
-```
-repositories {
-    ...
-    maven {
-        url  "https://dl.bintray.com/criticalgnome/maven" 
-    }
-}
-```
 
 Add dependensy to your app ```build.gradle```:
 ```
