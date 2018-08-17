@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ExtTextView extTextView = findViewById(R.id.extTextView);
         extTextView.setMainText("Hello, World!");
+        extTextView.setMainTextStyle(R.style.CustomFontStyle1);
         extTextView.setAdditionalText("From my library");
+        extTextView.setAdditionalTextStyle(R.style.CustomFontStyle2);
     }
 }
