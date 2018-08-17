@@ -1,8 +1,10 @@
 package com.criticalgnome.exttextview;
 
 import android.content.Context;
+import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
+import android.support.annotation.StyleRes;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,6 +51,14 @@ public class ExtTextView extends LinearLayout {
         mainText.setText(getContext().getString(res));
     }
 
+    public void setMainTextStyle(@StyleRes int res) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            mainText.setTextAppearance(res);
+        } else {
+            mainText.setTextAppearance(getContext(), res);
+        }
+    }
+
     public void setAdditionalText(String text) {
         if (text != null && text.length() > 0) {
             additionalText.setText(text);
@@ -61,5 +71,13 @@ public class ExtTextView extends LinearLayout {
     public void setAdditionalText(@StringRes int res) {
         additionalText.setText(getContext().getString(res));
         additionalText.setVisibility(View.VISIBLE);
+    }
+
+    public void setAdditionalTextStyle(@StyleRes int res) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            additionalText.setTextAppearance(res);
+        } else {
+            additionalText.setTextAppearance(getContext(), res);
+        }
     }
 }
