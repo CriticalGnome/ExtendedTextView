@@ -28,13 +28,19 @@ Now you can add ```ExtTextView``` to your xml layout.
 
 ```setMainText()``` set text to main block. May accept both ```String``` or ```@StringRes int```.
 
+```setMainTextStyle()``` set text style to main block. May accept ```@StyleRes int```.
+
 ```setAdditionalText()``` set text to additional block. May accept both ```String``` or ```@StringRes int```. If argument is ```null``` of empty string, additional block is not shown (default state)
+
+```setAdditionalTextStyle()``` set text style to additional block. May accept ```@StryleRes int```.
 
 ## Changelog
 
 - 1.0
     - Initial release
-    
+- 1.1
+    - Added style change methods
+
 ## License
 
     Copyright 2018 Sergey Kalinovsky
