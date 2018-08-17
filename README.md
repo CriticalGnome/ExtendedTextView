@@ -37,7 +37,7 @@ Now you can add ```ExtTextView``` to your xml layout.
     
 ## License
 
-    Copyright 2014 - 2018 Henning Dodenhof
+    Copyright 2018 Sergey Kalinovsky
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
