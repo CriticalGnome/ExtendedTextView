@@ -26,10 +26,10 @@ Now you can add ```ExtTextView``` to your xml layout.
 
 ## Changelog
 
-- 1.0
-    - Initial release
 - 1.1
     - Added style change methods
+- 1.0
+    - Initial release
 
 ## License
 
